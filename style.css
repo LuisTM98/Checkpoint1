@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.contentIzq{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: gray;
+    padding: 30px;
+    justify-content: start;
+    align-items: center;
+}
+
+.contentDch{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    margin: 20px;
+    margin-right: 40px;
+    gap: 20px;
+}
+
+.dchTop{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    height: 50vh;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: inherit;
+    height: 33%;
+    padding: 50px;
+}
+
+.buttonTop{ 
+    width: 100px;
+    height: 20px;
+    background-color: aqua;
+}
+
+.dchBottom{
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    height: 50vh;
+}
+
+.textContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 700px){
+    .content{flex-direction: column;}
+    .buttonContainer{justify-content: center!important;}
+}
+ 
